@@ -1,0 +1,55 @@
+.card-pane {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-row-gap: 30px;
+
+  .single-card {
+    @include transition(0.5s);
+    padding: 0.5em;
+    border-radius: 2.5px;
+    box-shadow: 2px 2px 5px 2px darkgray;
+    text-transform: capitalize;
+
+    .card-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 2.5px;
+    }
+    .card-name {
+      @include font-inter-400(1rem);
+      margin-bottom: 0.25em;
+    }
+    .card-price {
+      margin-bottom: 0.25em;
+    }
+    .card-company {
+      @include font-inter-700(1rem);
+      margin-bottom: 0.25em;
+    }
+    .card-rating {
+      @include flexShift(row, flex-start, center);
+      margin-bottom: 0.25em;
+
+      .card-rating-num {
+        @include font-inter-400(1rem);
+      }
+
+      .card-rating-star {
+        margin-right: 5px;
+      }
+    }
+    .add-cart-item-container {
+      @include flexShift(row, space-around, center);
+      @include font-inter-700(1rem);
+      width: 100%;
+      padding-top: 0.5em;
+      border-top: 1px solid lightgray;
+    }
+  }
+
+  .single-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

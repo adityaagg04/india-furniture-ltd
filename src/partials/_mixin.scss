@@ -1,0 +1,42 @@
+@mixin flexShift($dir, $jc, $ai) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin font-karla-400($size) {
+  font-family: "Karla", sans-serif;
+  font-size: $size;
+  font-weight: 400;
+}
+@mixin font-karla-700($size) {
+  font-family: "Karla", sans-serif;
+  font-size: $size;
+  font-weight: 700;
+}
+@mixin font-ubuntu-400($size) {
+  font-family: "Ubuntu", sans-serif;
+  font-size: $size;
+  font-weight: 400;
+}
+@mixin font-ubuntu-700($size) {
+  font-family: "Ubuntu", sans-serif;
+  font-size: $size;
+  font-weight: 700;
+}
+@mixin font-inter-400($size) {
+  font-family: "Inter", sans-serif;
+  font-size: $size;
+  font-weight: 400;
+}
+@mixin font-inter-700($size) {
+  font-family: "Inter", sans-serif;
+  font-size: $size;
+  font-weight: 700;
+}
+@mixin transition($time) {
+  transition-duration: $time;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
+}
